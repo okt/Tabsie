@@ -1,0 +1,16 @@
+extend layout
+block content
+  p
+    | Your tab file has been processed. Click below
+    | to download your tab file in PDF format.
+    <div class="file" ><a href=#{file}><img src="images/icon_pdf.png"><span>#{file_name}</span></a></div>
+  script(type='text/javascript')
+    $(".file").hide(0).delay(200).fadeIn(500);
+block sidebar
+  .widget
+    h1 Instructions
+    p
+      | Download and archive your tab file as they will
+      | only exist on the server for 72 hours.
+
+

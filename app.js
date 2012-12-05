@@ -27,7 +27,7 @@ app.post('/', function(req, res){
 	var doc 			= new PDFDocument({
 		info: {
 		    Title: 'Tab Document',
-		    Author: 'Petro-Tech Printing Ltd.'
+		    Author: 'Tabsie'
 		},
 		size: [648, 792],
   		layout: 'landscape',

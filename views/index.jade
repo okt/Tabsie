@@ -1,0 +1,48 @@
+extend layout
+block content
+  form(method='post', action='/ ')
+    h2 Name
+    input(name='name', type='text')
+    h2 Bank
+    input(name='bank', type='text')
+    h2 Captions
+    textarea(name='captions', rows="5")
+    p.example
+      | <span>example:</span>
+      | Table of contents, Projects, Appendix A,
+      | Appendix B, Index
+    label(for='Pre-Cut Stock') Pre-Cut Stock
+    input(type="checkbox", name="pre_cut")
+    br
+    label(for='Pre-Cut Stock') Capitalize Captions
+    input(type="checkbox", name="caps")
+    br
+    label(for='Pre-Cut Stock') Small Type
+    input(type="checkbox", name="small")
+    input(type="submit", value="Submit")
+
+block sidebar
+  .widget
+    h1 Instructions
+    p
+      | Enter in the information to generate a PDF
+      | copy setup for print.
+    p
+      ul
+        li
+          span Name :
+          |  Client and project name
+        li
+          span Bank :
+          |  Number of tabs
+        li
+          span Captions :
+          |  Outline the tab captions by seperating
+          | each caption with a comma.
+        li
+          span Pre-Cut Stock :
+          |  Select this option if you are printing onto
+          | a pre-cut tab paper. (ie. 1/5th cut tri-lar tabs)
+        li
+          span Capitalize Captions :
+          |  Select this if you want the captions to be capitalized

@@ -1,0 +1,14 @@
+!!!5
+html
+  head
+    title #{title} - Tabber
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='http://code.jquery.com/jquery-latest.min.js')
+  body
+    header
+      h1 <a href="/">Tabber</a>
+    .container
+      .main-content
+        block content
+      .sidebar
+        block sidebar
