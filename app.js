@@ -41,7 +41,7 @@ app.post('/', function(req, res){
 	var caps 			= req.body.caps
 	var small			= req.body.small
 	var tab_pos 		= 0
-	var tab_margin 	= 18 // 72 * 0.25in;
+	var tab_margin 	= 36 // 72 * 0.5in;
 	var counter 		= 0
 	var tab_width 		= (792 - (tab_margin * 2)) / bank;
 
